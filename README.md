@@ -8,7 +8,11 @@
 
 ![夜 · Lime Night 主页](images/home-night.png)
 
+![运行中：乱码逐字解码](images/decode.gif)
+
 ## 三套主题
+
+![三套主题即时切换](images/skins.gif)
 
 | 夜 · Lime Night | 日 · Paper Day | 深空 · Deep Space |
 |---|---|---|
