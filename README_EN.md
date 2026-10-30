@@ -26,22 +26,22 @@
 
 ## Get it
 
-Personal license ¥49 (store link coming soon). After purchase you receive a **license key**. Then run in Terminal:
+**Free and open source** ([MIT](LICENSE)). Run in Terminal (macOS):
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/lianggangyao-tech/code-life-harness-skin/main/get.sh | bash -s -- <license-key>
+curl -fsSL https://raw.githubusercontent.com/lianggangyao-tech/code-life-harness-skin/main/get.sh | bash
 ```
 
-Quit Harness (⌘Q) and reopen it. You can also hand this command to an AI agent; see [AGENTS.md](AGENTS.md).
+Quit Harness (⌘Q) and reopen it. Or download `CodeLife-Harness-Skin.zip` from [Releases](../../releases/latest), unzip and double-click `install.command`. You can also hand the command to an AI agent; see [AGENTS.md](AGENTS.md).
 
 ## Privacy
 
 Runs locally only. No network calls, no data collection.
 
-## This repository
+## Source
 
-This is the showcase, release and feedback repository. Releases contain an encrypted package that needs a license key. The skin's source code is not published here. Please report bugs and ideas in [Issues](../../issues).
+The full source is here: `plugin/src/client.js` (all UI), `plugin/lib/index.js` (entry), `pack/` (install scripts), `tools/build.py` (build → `dist/`). Forks, issues and pull requests are welcome.
 
 DeepSeek and DeepSeek Harness are trademarks or product names of their respective owners and are mentioned only to describe compatibility.
 
-Published by JAYO studio. © 2026 All rights reserved.
+Published by JAYO studio. © 2026 · MIT License

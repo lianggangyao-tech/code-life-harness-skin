@@ -1,0 +1,32 @@
+{
+  "name": "dsh-skin-code-life",
+  "description": "代码人生（Code Life）：DeepSeek Harness 的代码风皮肤——三套主题、自绘四栏布局、主页问候、代码雨与乱码解码动效。非官方。",
+  "version": "1.3.0",
+  "icon": "./icon.svg",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": ["icon.svg", "lib/index.js", "lib/client.js", "cordis.patch.yml"],
+  "license": "MIT",
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-session",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  }
+}

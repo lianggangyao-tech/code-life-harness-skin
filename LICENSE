@@ -1,9 +1,26 @@
-Copyright (c) 2026 JAYO studio 工作室. All rights reserved.
+MIT License
 
-This repository contains documentation, images, an install script (get.sh) and
-encrypted release packages only. No license is granted
-to copy, modify, or redistribute them, except for linking to and quoting this
-repository with attribution.
+Copyright (c) 2026 JAYO studio 工作室
 
-The Code Life skin itself is commercial software distributed separately under
-its own end-user license agreement.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+本皮肤是 DeepSeek Harness 的非官方第三方插件，与 DeepSeek 无关联。
+DeepSeek、DeepSeek Harness 为其各自权利人的商标或产品名称，这里仅用于说明兼容对象。
+Harness 更新可能导致本皮肤部分或全部失效。

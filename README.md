@@ -37,32 +37,40 @@
 
 ## 获取与安装
 
-个人版 ¥49，在爱发电购买（店铺链接上线后更新在这里）。付款后自动回复里有你的**授权码**。
+**免费开源**（[MIT 许可](LICENSE)），随便用、随便改。
 
-在「终端」里运行这一行（把 `<授权码>` 换成你的）：
+在「终端」里运行这一行（macOS）：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/lianggangyao-tech/code-life-harness-skin/main/get.sh | bash -s -- <授权码>
+curl -fsSL https://raw.githubusercontent.com/lianggangyao-tech/code-life-harness-skin/main/get.sh | bash
 ```
 
 装好后完全退出 Harness（⌘Q）再打开，左侧图标栏点「皮肤」选主题。
 
-**让 AI 助手帮你装**：把上面这行命令和授权码发给 DeepSeek Harness 或其他能执行终端命令的 AI 助手，说“帮我运行这行命令安装代码人生皮肤”。给助手看的详细步骤在 [AGENTS.md](AGENTS.md)。
+**也可以手动装**：到 [Releases](../../releases/latest) 下载 `CodeLife-Harness-Skin.zip`，解压后双击 `install.command`（第一次运行右键 →「打开」）。其他系统：Harness 左侧「插件」→「添加插件」→ 本地目录，填解压后 `plugin` 文件夹的路径。
 
-安装包放在本仓库的 [Releases](../../releases) 里，是加密的，需要授权码才能打开。卸载：运行安装目录（`~/Library/Application Support/CodeLifeSkin/`）里的 `uninstall.command`，或在皮肤页切回“Harness 原布局”。
+**让 AI 助手帮你装**：把上面那行命令发给 DeepSeek Harness 或其他能执行终端命令的 AI 助手。给助手看的详细步骤在 [AGENTS.md](AGENTS.md)。
+
+卸载：运行安装目录（`~/Library/Application Support/CodeLifeSkin/`）里的 `uninstall.command`，或在皮肤页切回“Harness 原布局”。
 
 ## 隐私
 
 皮肤只在你本机运行，不联网、不收集任何数据。主页上的会话、昵称都是从你本机 Harness 实时读取的。
 
-## 本仓库
+## 源码与自己改
 
-这里是**展示、发布与反馈仓库**：介绍、截图、更新记录、加密安装包和问题反馈。皮肤源码不在本仓库公开。
+```
+plugin/src/client.js   皮肤全部界面代码（主题、布局、主页、代码雨、解码动效）
+plugin/lib/index.js    插件入口
+plugin/package.json    插件信息（Harness 插件格式）
+pack/                  安装/卸载脚本与包内说明
+tools/build.py         打包：python3 -I tools/build.py → dist/
+```
 
-发现问题或有想要的功能，请在 [Issues](../../issues) 里提。
+改完 `plugin/src/client.js` 后运行打包，再用 `dist/` 里的包安装即可。欢迎 Fork、提 [Issues](../../issues) 和 Pull Request。
 
 ## 声明
 
 DeepSeek、DeepSeek Harness 是其各自权利人的商标或产品名称，本项目与 DeepSeek 无关联，仅用于说明兼容对象。
 
-出品：JAYO studio 工作室 · © 2026 保留所有权利。
+出品：JAYO studio 工作室 · © 2026 · MIT 许可

@@ -1,0 +1,4 @@
+# 代码人生 皮肤：只插入本包自己这一行（浏览器端插件）。
+- insert:
+    - id: code-life-skin
+      name: 'dsh-skin-code-life'

@@ -1,5 +1,9 @@
 # 更新记录
 
+## 1.3.0（2026-10-31）
+- 免费开源：改用 MIT 许可，源码公开在 GitHub；安装不再需要授权码，安装包不再加密。
+- 一行命令安装改为：`curl -fsSL https://raw.githubusercontent.com/lianggangyao-tech/code-life-harness-skin/main/get.sh | bash`。
+
 ## 1.2.0（2026-10-27）
 - 新的安装方式：用授权码一行命令安装，也可以交给 AI 助手执行；安装包从 GitHub 下载，不走网盘。
 - 许可协议定稿：出品方 JAYO studio 工作室；购买后 3 个月内提供兼容更新；写明退款规则和授权码使用规则。
